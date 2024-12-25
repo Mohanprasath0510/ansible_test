@@ -1,0 +1,19 @@
+---
+- name: Configure VLANs on Cisco Devices
+  hosts: routers
+  gather_facts: no
+  tasks:
+    - name: Run show ip int brief on remote devices
+      cisco.ios.ios_command:
+        commands:
+          - show ip int brief
+      register: ip_int_output  # Save the output in the variable 'ip_int_output'
+
+    - name: Split the output into lines
+      set_fact:
+        ip_int_lines: "{{ ip_int_output.stdout[0].split('\n') }}"  # Split the output into lines
+
+    - name: Display the output line by line
+      debug:
+        msg: "{{ item }}"
+      loop: "{{ ip_int_lines }}"
