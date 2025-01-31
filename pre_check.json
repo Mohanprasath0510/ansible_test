@@ -1,0 +1,20 @@
+{
+    "show ethernet-switching table": {
+        "output": ""
+    },
+    "show version": {
+        "output": "fpc0:\nHostname: vqfx-re\nModel: vqfx-10000\nJunos: 18.1R1.9 limited\nJUNOS Base OS boot [18.1R1.9]\nJUNOS Base OS Software Suite [18.1R1.9]\nJUNOS Crypto Software Suite [18.1R1.9]\nJUNOS Online Documentation [18.1R1.9]\nJUNOS Kernel Software Suite [18.1R1.9]\nJUNOS Packet Forwarding Engine Support (qfx-10-f) [18.1R1.9]\nJUNOS Routing Software Suite [18.1R1.9]\nJUNOS jsd [i386-18.1R1.9-jet-1]\nJUNOS SDN Software Suite [18.1R1.9]\nJUNOS Enterprise Software Suite [18.1R1.9]\nJUNOS Web Management [18.1R1.9]\nJUNOS py-base-i386 [18.1R1.9]\nJUNOS py-extensions-i386 [18.1R1.9]"
+    },
+    "show interfaces terse": {
+        "output": "Interface               Admin Link Proto    Local                 Remote\ngr-0/0/0                up    up\nbme0                    up    up\nbme0.0                  up    up   inet     128.0.0.1/2     \n                                            128.0.0.4/2     \n                                            128.0.0.16/2    \n                                            128.0.0.63/2    \ncbp0                    up    up\ndsc                     up    up\nem0                     up    up\nem0.0                   up    up   inet     192.168.17.143/24\nem1                     up    up\nem1.0                   up    up   inet     169.254.0.2/24  \nem2                     up    down\nem2.32768               up    down inet     192.168.1.2/24  \nem3                     up    down\nesi                     up    up\ngre                     up    up\nipip                    up    up\nirb                     up    up\njsrv                    up    up\njsrv.1                  up    up   inet     128.0.0.127/2   \nlo0                     up    up\nlo0.0                   up    up   inet    \n                                   inet6    fe80::205:860f:fc71:1d00\nlo0.16385               up    up   inet    \nlsi                     up    up\nmtun                    up    up\npimd                    up    up\npime                    up    up\npip0                    up    up\ntap                     up    up\nvme                     up    down\nvtep                    up    up"
+    },
+    "show interfaces descriptions": {
+        "output": ""
+    },
+    "show lldp neighbors": {
+        "output": "Local Interface    Parent Interface    Chassis Id          Port info          System Name\nem0                -                   DESKTOP-ETF4TF3     00:50:56:c0:00:01"
+    },
+    "show virtual-chassis": {
+        "output": "Virtual Chassis ID: 6c89.751e.e97c\nVirtual Chassis Mode: Enabled\n                                                Mstr           Mixed Route Neighbor List\nMember ID  Status   Serial No    Model          prio  Role      Mode  Mode ID  Interface\n0 (FPC 0)  Prsnt    817789208176 vqfx-10000     128   Master*      N  VC\n\nMember ID for next new member: 1 (FPC 1)"
+    }
+}

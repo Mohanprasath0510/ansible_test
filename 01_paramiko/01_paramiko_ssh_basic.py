@@ -16,7 +16,7 @@ if not username:
     username = "admin"
     print(f"username not provided, consider to default usernmae {username}")
 
-password = getpass(f"Enter Password of the user {username}: ") or 'admin'
+password = getpass(f"\U0001F511 Enter Password of the user {username}: ") or 'admin'
 #getpass(): Prompts the user to input their password securely (input is not displayed to the screen).
 
 ssh_client =client.SSHClient()
