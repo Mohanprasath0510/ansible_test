@@ -66,5 +66,5 @@ def cisco_cmd_executor(hostname,commands):  #define the function "cisco_cmd_exec
 
     ssh_client.close() #close the ssh connection
 
-cisco_cmd_executor('192.168.17.2',s1_commands)
-cisco_cmd_executor('192.168.17.50',s2_commands)
+cisco_cmd_executor('192.168.17.2',s1_commands)     #'192.168.17.2' → The IP address of Switch S1, meaning the function will execute commands on this device.                                                   #s1_commands → A variable (likely a list) containing the commands to be executed on Switch S1.
+cisco_cmd_executor('192.168.17.50',s2_commands)    #s1_commands → A variable (likely a list) containing the commands to be executed on Switch S1.
